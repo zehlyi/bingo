@@ -3,29 +3,29 @@
 <title>Prelim/Defense Bingo</title>
 <style>
 .pulsate {
-    -webkit-animation: pulsate 1s ease-out;
-    -webkit-animation-iteration-count: infinite; 
-    opacity: 0.5;
+    -webkit-animation: pulsate 1s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    font-weight: bold;
 }
 @-webkit-keyframes pulsate {
-    0% { 
-        opacity: 0.5;
+    0% {
+        color: #111111;
     }
-    50% { 
-        opacity: 1.0;
+    50% {
+        color: #999900;
     }
-    100% { 
-        opacity: 0.5;
+    100% {
+        color: #111111;
     }
 }
 #bannerflash {
-	//display: inline;
-	position: relative;
-	left: 13em;
-	top: 30px;
-	z-index: 100;
-	width: 100px;
-	font-size: 12px;
+        //display: inline;
+        position: relative;
+        left: 13em;
+        top: 30px;
+        z-index: 100;
+        width: 100px;
+        font-size: 12px;
 
 /* Safari */
 -webkit-transform: rotate(-45deg);
