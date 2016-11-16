@@ -1,12 +1,64 @@
 <html>
 <head>
 <title>Prelim/Defense Bingo</title>
+<style>
+.pulsate {
+    -webkit-animation: pulsate 1s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    font-weight: bold;
+}
+@-webkit-keyframes pulsate {
+    0% {
+        color: #111111;
+    }
+    50% {
+        color: #999900;
+    }
+    100% {
+        color: #111111;
+    }
+}
+#bannerflash {
+        //display: inline;
+        position: relative;
+        left: 13em;
+        top: 30px;
+        z-index: 100;
+        width: 100px;
+        font-size: 12px;
+
+/* Safari */
+-webkit-transform: rotate(-45deg);
+
+/* Firefox */
+-moz-transform: rotate(-45deg);
+
+/* IE */
+-ms-transform: rotate(-45deg);
+
+/* Opera */
+-o-transform: rotate(-45deg);
+}
+</style>
 </head>
 <body>
 
 
 <div id="content">
+<div>
+<div class="pulsate" id="bannerflash">
+<?php 
+ $array2 = array("Gluten Free!",
+		"Double buffered!",
+		"sqrt(-1) love you!",
+		"Tip your waiter!",
+		"11/10!",
+		"Bingo == love!",
+		"With added Doge!",
+		"Do not distribute!");
+assert(shuffle($array2));echo $array2[0]; ?></div>
 <h3>Prelim/Defense Bingo</h3>
+</div>
 <p>Hit refresh to generate a new board.</p>
 <?php
 
