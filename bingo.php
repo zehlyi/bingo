@@ -1,7 +1,6 @@
 <html>
 <head>
 <title>Prelim/Defense Bingo</title>
-<link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 <body>
 
